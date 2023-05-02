@@ -14,6 +14,8 @@ if(isset($_POST['submit'])){
       $row = mysqli_fetch_assoc($select);
       $_SESSION['user_id'] = $row['ID'];
       header('location:profile.php');
+
+      
    }else{
       $message[] = 'incorrect email or password!';
    }
